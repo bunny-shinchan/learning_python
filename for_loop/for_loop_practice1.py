@@ -33,14 +33,19 @@ Print numbers from 1 to N:
 “Buzz” for multiples of 5
 “FizzBuzz” for multiples of both
 Constraint: Single loop only.
+
 Divisible by 3 or 5 (but not both)
 Print numbers between 1 and N that are divisible by 3 or 5, but not both.
+
 Count Evens and Odds
 From 1 to N, count how many even and odd numbers exist.
+
 Sum of Numbers
 Find the sum of numbers from 1 to N using a for loop.
+
 Sum of Even Numbers
 Find the sum of all even numbers between 1 and N.
+
 🔹 Level 3: Patterns Without Nested Loops
 Print Stars in a Line
 Print ***** for a given number N.
@@ -119,14 +124,71 @@ Print numbers from 1 to N:
 Constraint: Single loop only.
 """
 
+# user_input = int(input("type a number"))
+#
+# for nums in range(1, user_input + 1):
+#     if (nums % 3 == 0) and (nums % 5 == 0):
+#         print("FizzBuzz")
+#     elif nums %3 == 0:
+#         print("Fizz")
+#     elif nums % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(nums)
+#
+
+"""
+Divisible by 3 or 5 (but not both)
+Print numbers between 1 and N that are divisible by 3 or 5, but not both.
+"""
+
+# user_input = int(input("type a number"))
+#
+# for nums in range(1, user_input +1):
+#     if (nums %3 == 0 or nums %5 == 0) and not (nums %3 == 0 and nums %5 == 0):
+#         print(nums)
+
+
+"""
+Count Evens and Odds
+From 1 to N, count how many even and odd numbers exist.
+"""
+# user_input = int(input("type a number"))
+# count_odd = 0
+# count_even = 0
+#
+# for num in range(1, user_input + 1):
+#     if num %2 == 0:
+#         count_even = count_even +1
+#
+#     else:
+#         count_odd = count_odd +1
+#
+# print(f"even:  {count_even}")
+# print(f"odd : {count_odd}")
+
+
+"""
+Sum of Numbers
+Find the sum of numbers from 1 to N using a for loop.
+"""
+
+# user_input = int(input("type a number"))
+# total = 0
+#
+# for num in range (1, user_input +1):
+#     total = total + num
+#
+# print(f"Total is {total}")
+
+"""
+Sum of Even Numbers
+Find the sum of all even numbers between 1 and N.
+"""
+
 user_input = int(input("type a number"))
-
-for nums in range(1, user_input +1):
-    if (nums % 3 == 0) and (nums % 5 == 0):
-        print(f"{nums} FizzBuzz")
-    elif nums % 3 == 0:
-        print(f"{nums} Fizz")
-    elif nums % 5 == 0:
-        print(f"{nums} Buzz")
-
-    print(nums)
+sum_of_even =0
+for num in range(1, user_input + 1):
+    if num %2 ==0:
+     sum_of_even+= num
+print(sum_of_even)
