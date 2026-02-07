@@ -291,18 +291,16 @@ Input: 5
 Output: 120
 """
 
-user_input = int(input("Enter a number to find its factorial"))
-#factorial n! = n *(n-1) *(n-2) * ... * 1
-counter =1
-total = 1
-while user_input >= counter:
-    total = total * counter
-    print(f" {user_input} * {counter} = {total}")
-    counter+=1
-
-print(total)
-
-
+# user_input = int(input("Enter a number to find its factorial"))
+# #factorial n! = n *(n-1) *(n-2) * ... * 1
+# counter =1
+# total = 1
+# while user_input >= counter:
+#     total = total * counter
+#     print(f" {user_input} * {counter} = {total}")
+#     counter+=1
+#
+# print(total)
 
 
 
@@ -311,13 +309,70 @@ print(total)
 
 
 
+"""
+🟠 Level 3: Real Logic Thinking
+🔟 Factorial
+Take a number n and print its factorial.
+Example:
+Input: 5
+Output: 120
+"""
+
+# user_input = int(input("Enter a number to check its factorial"))
+# counter = 1
+# total = 1
+#
+# while user_input >= counter:
+#     total = total * counter
+#     print(f"{user_input} * {counter} = { total}")
+#     counter+= 1
+# print(total)
+#
 
 
 
+"""
+
+🧠 Interview Problem: Palindrome Number
+Question:
+Take a positive integer and check whether it is a palindrome.
+A palindrome number:
+reads the same forward and backward
+🧪 Examples
+121  → Palindrome
+123  → Not Palindrome
+505  → Palindrome
+10   → Not Palindrome
+"""
+
+user_input = int(input("Enter a number to check if it is palindrome"))
+reverse_num = 0
+original_num = user_input
+
+while user_input > 0:
+    last_digit = user_input %10
+    user_input = user_input // 10
+    reverse_num = reverse_num * 10 + last_digit
+
+if original_num == reverse_num:
+    print("It is a palindrome")
+else:
+    print("This number is not palindrome")
 
 
 
-
+# user_input = int(input("Enter a number: "))
+# reverse_num = 0
+# original_num =user_input
+# while user_input > 0:
+#     last_digit = user_input %10
+#     user_input = user_input //10
+#     reverse_num = reverse_num *10 +last_digit
+#
+# if original_num == reverse_num:
+#     print("Palindrome")
+# else:
+#     print("Not a palindrome")
 
 
 
