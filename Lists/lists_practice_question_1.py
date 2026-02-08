@@ -315,30 +315,56 @@ Output: [1, 2, 3, 0, 0, 0]
 #
 # print(numbers)
 
-numbers = [2,3,4,5,5,6,7,8,7,8,5]
-new_list =[]
-
-for nummber in numbers:
-    if nummber not in new_list:
-        new_list.append(nummber)
-print(new_list)
-
-
+# numbers = [2,3,4,5,5,6,7,8,7,8,5]
+# new_list =[]
+#
+# for number in numbers:
+#     if number not in new_list:
+#         new_list.append(number)
+# print(new_list)
 
 
+"""WAP to ask the user to enter names of their 3 favorite movies and store them in a list"""
+
+# mov1 = input("Enter your first favorite movie")
+# mov2 = input("Enter your second favorite movie")
+# mov3 = input("Enter your third favorite movie")
+#
+# movies =[]
+# movies.append(mov1)
+# movies.append(mov2)
+# movies.append(mov3)
+# print(movies)
 
 
+"""
+WAP to check if a list contains a plaindrome of elements? (Hint : use copy method
+"""
 
+# list1 = [2,3,5]
+# list2 = list1.copy()
+# list1.reverse()
+#
+# if list1 == list2:
+#     print("PLaindrome")
+# else:
+#     print("Not a PLaindrome")
+#
 
+"""
+WAP to count the number of students with the "A" grade in the following tuple.
 
+["C", "D","A", "A", "B", "B", "A"]
 
+WAP to store the above values in a list and sort them from "A" to "D"
+"""
 
+# grades = ("C", "D","A", "A", "B", "B", "A")
+# print(grades.count("A"))
 
-
-
-
-
-
+# grade =["C", "D","A", "A", "B", "B", "A"]
+# grade.sort()
+# print(grade)
 
 
 

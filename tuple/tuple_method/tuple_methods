@@ -1,0 +1,68 @@
+🔹 Frequently Used Tuple Methods
+1️⃣ count()
+
+Returns how many times a value appears in the tuple.
+
+nums = (1, 2, 3, 2, 2, 4)
+print(nums.count(2))
+
+
+Output
+
+3
+
+
+📌 Useful when you want frequency of an element.
+
+2️⃣ index()
+
+Returns the first index of a given value.
+
+nums = (10, 20, 30, 20)
+print(nums.index(20))
+
+
+Output
+
+1
+
+
+⚠️ Raises ValueError if the element is not found.
+
+nums.index(99)   # Error
+
+🔹 That’s it 😄 (Yes, really)
+
+Tuples have only these 2 methods:
+
+Method	Purpose
+count()	Count occurrences
+index()	Find position
+
+This is because tuples cannot be modified.
+
+🔹 Useful Built-in Functions with Tuples (Very Important)
+
+Even though these are not tuple methods, they are commonly used with tuples and often confused in interviews 👇
+
+✔ len()
+t = (1, 2, 3)
+print(len(t))   # 3
+
+✔ max() / min()
+t = (4, 1, 9)
+print(max(t))   # 9
+print(min(t))   # 1
+
+✔ sum()
+t = (1, 2, 3)
+print(sum(t))   # 6
+
+✔ sorted() (returns a list)
+t = (3, 1, 2)
+print(sorted(t))
+
+
+Output:
+
+[1, 2, 3]

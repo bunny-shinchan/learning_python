@@ -57,6 +57,13 @@ print(numbers2)"""
 Write a program to remove the duplicates in list
 
 """
-
+#remove the duplicate from the list
 numbers = [2,3,4,4,5,6,7,8]
+new_list = []
+
+for num in numbers:
+    if num not in new_list:
+        new_list.append(num)
+print(new_list)
+
 

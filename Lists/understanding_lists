@@ -1,0 +1,48 @@
+📌 What is a List in Python? (Simple Definition)
+
+A list is a container that stores multiple values in one variable.
+
+Instead of creating many variables like this:
+
+a = 10
+b = 20
+c = 30
+
+
+You can store all of them together in one list:
+
+numbers = [10, 20, 30]
+-----
+🧠 Think of a List Like…
+📦 A box with compartments
+
+Each box can hold:
+
+numbers
+
+words
+
+or even other lists
+
+example:
+items = ["apple", "banana", "mango"]
+-----
+
+
+✏️ Lists are Mutable (Beginner-friendly meaning)
+
+Mutable means you can change the list after creating it.
+
+Example:
+
+numbers = [1, 2, 3]
+numbers[1] = 10
+print(numbers)
+
+Output:
+
+[1, 10, 3]
+
+🧠 One-Line Summary (Remember This)
+
+A list is an ordered, changeable collection of values stored in one variable.

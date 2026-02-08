@@ -1,0 +1,131 @@
+🧠 What is a Dictionary in Python?
+
+A dictionary in Python is a built-in data type used to store data in key–value pairs.
+
+Each key is unique
+
+Each key maps to a value
+
+Data is unordered (logically) and mutable (can be changed)
+
+👉 Think of it like a real dictionary:
+word (key) → meaning (value)
+
+📌 Basic Syntax
+my_dict = {
+    key1: value1,
+    key2: value2
+}
+
+✅ Example 1: Simple Dictionary
+student = {
+    "name": "Sudhanshu",
+    "age": 24,
+    "course": "Python"
+}
+
+print(student)
+Output:
+
+{'name': 'Sudhanshu', 'age': 24, 'course': 'Python'}
+
+----
+🔍 Example 2: Accessing Values
+print(student["name"])
+print(student["age"])
+
+
+Output:
+
+Sudhanshu
+24
+
+
+⚠️ Accessing a non-existing key using [] causes an error:
+
+print(student["salary"])  # KeyError
+
+
+Safe way:
+
+print(student.get("salary"))  # None
+
+✏️ Example 3: Modifying a Dictionary
+Add a new key
+student["city"] = "Bangalore"
+
+Update an existing key
+student["age"] = 25
+
+🗑️ Example 4: Removing Elements
+del student["course"]
+
+
+OR
+
+student.pop("age")
+
+🔁 Example 5: Looping Through a Dictionary
+for key in student:
+    print(key, ":", student[key])
+
+
+OR
+
+for key, value in student.items():
+    print(key, "=>", value)
+
+🧩 Example 6: Dictionary with Mixed Data Types
+employee = {
+    "id": 101,
+    "name": "Amit",
+    "skills": ["Python", "SQL"],
+    "is_active": True,
+    "salary": 55000
+}
+
+
+✔ Keys must be immutable (string, number, tuple)
+❌ Lists and dictionaries cannot be keys
+
+⚡ Example 7: Nested Dictionary
+company = {
+    "employee1": {
+        "name": "Rahul",
+        "role": "Data Analyst"
+    },
+    "employee2": {
+        "name": "Anita",
+        "role": "Python Developer"
+    }
+}
+
+
+Access:
+
+print(company["employee1"]["role"])
+
+
+Output:
+
+Data Analyst
+
+🧠 Key Takeaways (Interview Gold ✨)
+
+Dictionaries store key–value pairs
+
+Keys are unique & immutable
+
+Values can be any data type
+
+Dictionaries are mutable
+
+Very fast lookups → O(1) average time
+
+If you want, next we can:
+
+🔥 Practice dictionary interview questions
+
+🔄 Compare list vs dictionary
+
+🧪 Do real-world use cases (API JSON, configs, counters)

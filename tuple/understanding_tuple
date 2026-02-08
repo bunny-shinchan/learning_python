@@ -1,0 +1,53 @@
+What is a Tuple?
+
+A tuple is a collection of items in Python, just like a list.
+
+👉 The big difference:
+Tuples cannot be changed after creation (they are immutable).
+Think of a tuple as a read-only list.
+
+How to Create a Tuple
+1️⃣ Using parentheses
+my_tuple = (1, 2, 3)
+
+2️⃣ Without parentheses (Python allows this)
+my_tuple = 1, 2, 3
+
+3️⃣ Single-element tuple (important!)
+single = (5,)   # comma is mandatory
+
+
+❌ (5) → this is just an integer, not a tuple
+
+Tuple vs List (Quick Comparison)
+| Feature                   | List  | Tuple |
+| ------------------------- | ----- | ----- |
+| Syntax                    | `[ ]` | `( )` |
+| Mutable                   | ✅ Yes | ❌ No  |
+| Can append/remove         | ✅     | ❌     |
+| Faster                    | ❌     | ✅     |
+| Safer (data won’t change) | ❌     | ✅     |
+
+Slicing a Tuple
+
+Same as lists:
+
+numbers = (10, 20, 30, 40, 50)
+
+print(numbers[1:4])   # (20, 30, 40)
+
+------
+
+Tuple Packing & Unpacking (🔥 Very Useful)
+Packing
+data = ("Sudhanshu", 25, "India")
+
+Unpacking
+name, age, country = data
+
+print(name)     # Sudhanshu
+print(age)      # 25
+print(country)  # India
+
+
+👉 This is used a LOT in interviews and real code.
