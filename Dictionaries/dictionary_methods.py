@@ -31,3 +31,12 @@ pairs = list(student.items())
 print(pairs[0])
 #('name', 'Sudhanshu Verma')
 
+
+student.update({"}city" : "Chennai"})
+print(student)
+# We can use this method in other way too
+
+new_list = {"city" : "Chennai", "age": 19}
+student.update(new_list)
+print(student)
+

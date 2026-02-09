@@ -1,0 +1,21 @@
+Set is the collection of the unordered items.
+Each elements in the set must be unique and immutable
+
+
+Example:
+nums = {1,2,3,4,5,6}
+set2 = {1,2,2,2,2,2}
+-----
+
+We can store immutable variables in a set as they as they immutable as well.
+
+For example: You can store the following things in a set
+int
+float
+tuple
+string
+boolean
+
+----XXXXXX
+Lists and dictionary cannot be stored in a set as they are mutable.
+
