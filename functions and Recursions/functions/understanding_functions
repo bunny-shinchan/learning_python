@@ -1,0 +1,86 @@
+🔹 What are Functions in Python?
+
+A function in Python is a block of reusable code that performs a specific task.
+
+Instead of writing the same code again and again, you can put it inside a function and call it whenever needed.
+
+🔹 Why Do We Use Functions?
+
+Avoid repeating code
+
+Make code clean and organized
+
+Improve readability
+
+Break big problems into small parts
+
+🔹 Basic Syntax of a Function
+def function_name():
+    # code block
+
+Example:
+def greet():
+    print("Hello, Sid!")
+
+
+To run (call) the function:
+
+greet()
+
+
+Output:
+
+Hello, Sid!
+
+-----
+
+🔹 Function with Parameters
+
+Parameters allow you to pass values into a function.
+
+def greet(name):
+    print("Hello", name)
+
+greet("Sid")
+
+
+Output:
+
+Hello Sid
+
+
+👉 name is a parameter
+👉 "Sid" is an argument
+
+🔹 Function with Return Value
+
+A function can send back a result using return.
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)
+
+
+Output:
+
+8
+
+
+return sends the result back to where the function was called.
+----
+
+🔹 Types of Functions in Python
+1️⃣ Built-in Functions
+
+Python already provides these:
+
+print()
+len()
+type()
+range()
+
+2️⃣ User-defined Functions
+
+Functions that you create using def.
