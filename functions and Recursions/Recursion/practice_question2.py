@@ -124,32 +124,73 @@ Output:
 #
 # print_num(5)
 
-def fact(n):
-    if (n == 0 or n ==1):
-        return 1
-    else:
-        return n * fact(n - 1)
-
-print(fact(5))
-
-
+# def fact(n):
+#     if (n == 0 or n ==1 ):
+#         return 1
+#     else:
+#         print(n)
+#         return n * fact(n-1)
+# print(fact(6))
 
 
-
-
-
-
-
-
-
+# def sum_num(n):
+#     if n == 0:
+#         return 0
+#     else:
+#         return n + sum_num(n -1)
+#
+# print(sum_num(5))
 
 
 
+"""
+Mentally it should be like this.
+
+sum_num(5)
+= 5 + sum_num(4)
+
+= 5 + (4 + sum_num(3))
+
+= 5 + (4 + (3 + sum_num(2)))
+
+= 5 + (4 + (3 + (2 + sum_num(1))))
+
+= 5 + (4 + (3 + (2 + (1 + sum_num(0)))))
+
+"""
 
 
+# def power_fun(x , y):
+#     if y == 0:
+#         return 1
+#     else:
+#         return x * power_fun(x , y-1)
+#
+# print(power_fun(3,3))
 
 
+"""
+🔶 Problem: Sum of Digits
 
+Write a recursive function that returns the sum of digits of a number.
+
+Example:
+sum_digits(1234) → 10
+
+
+Because:
+
+1 + 2 + 3 + 4 = 10
+"""
+
+
+# def sum_of_digits(n):
+#     if (n ==0 ):
+#         return 0
+#     else:
+#         last_digit = n %10
+#         return last_digit + sum_of_digits(n//10)
+# print(sum_of_digits(1234))
 
 
 

@@ -1,0 +1,60 @@
+📁 File I/O in Python
+What is File I/O?
+
+File I/O = File Input / Output
+
+It means:
+
+Input → Reading data from a file
+
+Output → Writing data to a file
+
+Until now, your programs:
+
+Took input from the user
+
+Printed output to the console
+
+With file I/O:
+
+Data stays saved even after the program ends ✅
+
+You can process large datasets
+
+You can build real applications
+--------
+
+************
+Python can be used to perform operations on a file. (read & write data)
+
+
+Types of files
+1) Text files : .txt, .docx, .log
+2) Binary files : .mp4 , .mov, .png, .jpeg
+
+Open, read, and close file
+
+We have to open a file before reading or writing
+
+f = open("file_name", "mode")
+
+file_name = sample.txt, demo.txt
+mode = read mode, write mode
+
+If we do not specify the mode, the python consider it as read by default.
+
+
+data = f.read()
+f.close()
+**************
+
+Modes (Very Important)
+Mode	Meaning
+"r"	Read (default)
+"w"	Write (overwrites file)
+"a"	Append (adds to file)
+"x"	Create new file (error if exists)
+"b"	Binary mode
+***********************
+
+Reading a file
