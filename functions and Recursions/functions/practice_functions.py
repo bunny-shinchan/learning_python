@@ -217,7 +217,18 @@ Negative numbers
 # num = int(input("Enter a number to check if it prime or not : "))
 # print(is_prime(num))
 
-
+# def count_vowels(text):
+#     count = 0
+#     vowels = "aeiouAEIOU"
+#     for char in text:
+#         if char in vowels:
+#             count +=1
+#     return count
+# try:
+#     text = input("Enter a word to check the number of vowels")
+# except:
+#     print("Enter a valid string")
+# print(count_vowels(text))
 """
 Write a function:
 
@@ -247,21 +258,23 @@ o
 o
 
 """
-
-
+vowels = "aeiouAEIOU"
 
 def count_vowels(text):
     count = 0
-    vowels = "aeiouAEIOU"
     for char in text:
         if char in vowels:
             count +=1
+
     return count
-try:
-    text = input("Enter a word to check the number of vowels")
-except:
-    print("Enter a valid string")
+
+text = input("Enter a word and check how many vowels are there")
 print(count_vowels(text))
+
+
+
+
+
 
 
 

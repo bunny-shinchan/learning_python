@@ -1,0 +1,197 @@
+Recursion in Python
+📌 Definition
+
+Recursion is a technique where a function calls itself to solve smaller versions of the same problem until a stopping condition is met.
+
+🔁 Core Idea
+
+Every recursive function must have:
+
+Base Case
+The condition where the function stops calling itself.
+(Prevents infinite recursion.)
+
+Recursive Case
+The part where the function calls itself with a smaller or simpler input.
+
+🧠 Mental Model
+
+Think of recursion as:
+
+“Break the problem into a smaller version of itself, until it becomes simple enough to solve directly.”
+
+🔎 Simple Example (Conceptual)
+
+Factorial:
+
+5! = 5 × 4 × 3 × 2 × 1
+
+
+Recursive thinking:
+
+n! = n × (n-1)!
+
+
+And eventually:
+
+1! = 1   ← base case
+
+
+Notice how the problem keeps reducing.
+
+⚙️ General Structure
+def function_name(parameters):
+    if base_case_condition:
+        return something
+
+    return function_name(modified_parameters)
+
+⚠️ Important Things to Remember
+1️⃣ Always define a base case
+
+Without it → infinite recursion → RecursionError.
+
+2️⃣ Each recursive call must move toward the base case
+
+If the input does not shrink or simplify → infinite loop.
+
+3️⃣ Recursion uses the call stack
+
+Each function call waits until the next call finishes.
+
+📦 When Is Recursion Useful?
+
+Recursion is especially powerful when solving problems involving:
+
+Trees
+
+Graphs
+
+Nested structures
+
+Divide and conquer
+
+Backtracking
+
+Mathematical definitions (factorial, Fibonacci, etc.)
+
+
+
+"""
+
+Example:
+
+Question to print the numbers from n to 1
+
+🧠 Step-by-Step Call Stack Visualization
+
+Think of each function call as a box added on top of a stack.
+
+🔹 Step 1 — First Call
+print_num(5)
+
+
+n = 5
+
+n != 0 → print 5
+
+Calls print_num(4)
+
+Output so far:
+
+5
+
+
+Stack:
+
+print_num(5)
+
+🔹 Step 2 — Second Call
+print_num(4)
+
+
+n = 4
+
+n != 0 → print 4
+
+Calls print_num(3)
+
+Output:
+
+5
+4
+
+
+Stack:
+
+print_num(5)
+print_num(4)
+
+🔹 Step 3 — Third Call
+print_num(3)
+
+
+Output:
+
+5
+4
+3
+
+
+Stack:
+
+print_num(5)
+print_num(4)
+print_num(3)
+
+🔹 Step 4 — Fourth Call
+print_num(2)
+
+
+Output:
+
+5
+4
+3
+2
+
+
+Stack:
+
+print_num(5)
+print_num(4)
+print_num(3)
+print_num(2)
+
+🔹 Step 5 — Fifth Call
+print_num(1)
+
+
+Output:
+
+5
+4
+3
+2
+1
+
+
+Stack:
+
+print_num(5)
+print_num(4)
+print_num(3)
+print_num(2)
+print_num(1)
+
+🔹 Step 6 — Base Case
+print_num(0)
+
+
+n == 0 → return
+
+No print
+
+No new call
+
+Stack now starts shrinking (functions finish one by one).
