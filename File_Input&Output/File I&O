@@ -48,6 +48,11 @@ data = f.read()
 f.close()
 **************
 
+You can follow this website too if you would like to see the modes.
+
+https://stackoverflow.com/questions/1466000/difference-between-modes-a-a-w-w-and-r-in-built-in-open-function
+
+
 Modes (Very Important)
 Mode	Meaning
 "r"	Read (default)
@@ -58,3 +63,21 @@ Mode	Meaning
 ***********************
 
 Reading a file
+
+
+----
+
+
+# Source - https://stackoverflow.com/a/30931305
+# Posted by industryworker3595112, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-02-20, License - CC BY-SA 4.0
+
+                  | r   r+   w   w+   a   a+
+------------------|--------------------------
+read              | +   +        +        +
+write             |     +    +   +    +   +
+write after seek  |     +    +   +
+create            |          +   +    +   +
+truncate          |          +   +
+position at start | +   +    +   +
+position at end   |                   +   +
