@@ -1,0 +1,145 @@
+1️⃣ Abstraction
+🔹 Definition:
+
+Abstraction means showing only essential features and hiding internal implementation details.
+
+You use something without knowing how it works internally.
+
+🔹 Example:
+class Car:
+    def start(self):
+        print("Car started")
+
+c1 = Car()
+c1.start()
+
+You call start() without knowing how the engine works internally.
+
+2️⃣ Encapsulation
+🔹 Definition:
+
+Encapsulation means binding data and methods together inside a class and restricting direct access to some data.
+
+It protects object data.
+
+🔹 Example:
+class Student:
+    def __init__(self, name):
+        self.__name = name   # private variable
+
+    def get_name(self):
+        return self.__name
+
+s1 = Student("Sid")
+print(s1.get_name())
+
+Here __name cannot be accessed directly from outside.
+
+3️⃣ Default Constructor
+🔹 Definition:
+
+A default constructor is a constructor that takes no parameters except self.
+
+🔹 Example:
+class Person:
+    def __init__(self):
+        print("Person created")
+
+p1 = Person()
+
+It runs automatically when object is created.
+
+4️⃣ self in the Constructor
+🔹 Definition:
+
+self refers to the current object being created.
+
+It is used to store data inside that specific object.
+
+🔹 Example:
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+Here:
+
+self.name belongs to the object.
+
+name is just a temporary parameter.
+
+5️⃣ Static Methods
+🔹 Definition:
+
+A static method is a method that does not use instance variables or class variables.
+
+It belongs to the class but does not depend on object data.
+
+It uses @staticmethod.
+
+🔹 Example:
+class MathUtils:
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+print(MathUtils.add(3, 4))
+
+No self is used.
+
+6️⃣ __init__() Function in Python
+🔹 Definition:
+
+__init__() is a special method (constructor) in Python that is automatically called when a new object of a class is created.
+
+It is used to initialize (assign values to) the object's attributes.
+
+🔹 Why It Is Needed
+
+When you create an object, Python needs a place to:
+
+Store the object's data
+
+Set initial values
+
+That work is done inside __init__().
+
+🔹 Basic Structure
+class ClassName:
+    def __init__(self, parameters):
+        # initialize object attributes
+🔹 Small Example
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Sid", 20)
+
+7️⃣ What is self in Constructor and Methods?
+🔹 In Constructor:
+
+self represents the newly created object.
+
+🔹 In Other Methods:
+
+self represents the object that is calling the method.
+
+Example:
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(self.name, "is barking")
+
+d1 = Dog("Tommy")
+d1.bark()
+
+Here:
+
+In constructor → self is d1
+
+In bark() → self is also d1
+
+Python automatically passes the object as the first argument.

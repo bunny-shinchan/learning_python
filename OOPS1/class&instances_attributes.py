@@ -17,8 +17,8 @@ For example:
         name should be an instance/onject attribute
         In that case, when the data is different for every object/instance, we notify that as a self.name ()
 """
-# Lets say, we are creating a database for students for a particular college. in that case, we wont be passing college
-#   as a paramenter as we are not going to change the name of the college.
+# Let's say, we are creating a database for students for a particular college. in that case, we won't be passing college
+#   as a parameter as we are not going to change the name of the college.
 
 class Student:
     college_name =  "Sheridan college"
