@@ -21,6 +21,10 @@ def hello(self):
 Class is collection two things :- 1) Data(attributes) 2) methods 
 """
 
+#🔹 What is self?
+
+#self represents the current object.
+
 
 class Student:
     college_name =  "Sheridan college"
