@@ -68,3 +68,19 @@ car1.start() # This is multi-level inheritance.
 #------------------------------
 
 # Mutiple Inderitance.
+
+"Multiple class properties can be inherited"
+
+#For example
+
+class A:
+    varA = "Welcome to class A"
+class B:
+    varB= "Welcome to class B"
+class C(A, B):
+    varC = "Welcome to class C"
+
+c1 = C()
+print(c1.varC)
+print(c1.varB)
+print(c1.varA)
