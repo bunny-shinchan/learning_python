@@ -1,0 +1,213 @@
+1️⃣ Class Methods
+Definition:
+
+A class method is a method that works with the class itself, not with individual objects.
+
+It uses the decorator @classmethod and takes cls as the first parameter.
+
+Example:
+class Student:
+    school = "ABC School"
+
+    @classmethod
+    def change_school(cls, new_name):
+        cls.school = new_name
+
+Here:
+
+school is a class variable
+
+change_school() modifies the class variable
+
+It affects all objects
+
+**************************************
+**************************************
+
+
+
+2️⃣ del Keyword
+Definition:
+
+The del keyword is used to delete:
+
+Variables
+
+Objects
+
+List elements
+
+Object attributes
+
+Example:
+x = 10
+del x
+
+Delete object:
+
+obj = Student()
+del obj
+
+Delete attribute:
+
+del obj.name
+
+
+**************************************
+**************************************
+
+
+3️⃣ Inheritance
+Definition:
+
+Inheritance allows a class (child class) to reuse properties and methods of another class (parent class).
+
+Example:
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    pass
+
+Here:
+
+Dog inherits from Animal
+
+Dog can use speak()
+
+**************************************
+**************************************
+
+4️⃣ Polymorphism
+Definition:
+
+Polymorphism means same method name, different behavior.
+
+It allows different classes to have methods with the same name but different implementations.
+
+Example:
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+Both have sound() method, but behavior differs.
+
+**************************************
+**************************************
+
+5️⃣ Private Attributes
+Definition:
+
+Private attributes are variables that should not be accessed directly outside the class.
+
+In Python, they are written using double underscore (__).
+
+Example:
+class Person:
+    def __init__(self):
+        self.__salary = 50000
+
+__salary is private.
+
+Trying to access:
+
+p = Person()
+print(p.__salary)   # Error
+
+
+**************************************
+**************************************
+
+6️⃣ Private (Attributes and Methods)
+
+You can make both attributes and methods private using double underscore.
+
+Example:
+class Bank:
+    def __init__(self):
+        self.__balance = 1000
+
+    def __show_balance(self):
+        print(self.__balance)
+
+Both:
+
+__balance
+
+__show_balance()
+
+are private.
+
+
+**************************************
+**************************************
+
+
+7️⃣ Property
+Definition:
+
+@property allows you to access a method like an attribute.
+
+It is used to implement controlled access to private variables.
+
+Example:
+class Student:
+    def __init__(self):
+        self.__marks = 0
+
+    @property
+    def marks(self):
+        return self.__marks
+
+Now you can access:
+
+s = Student()
+print(s.marks)
+
+Even though marks() is a method.
+
+**************************************
+**************************************
+
+8️⃣ super() Method
+Definition:
+
+super() is used in inheritance to call the parent class methods or constructor.
+
+Example:
+class Parent:
+    def __init__(self):
+        print("Parent constructor")
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        print("Child constructor")
+
+When you create Child object:
+
+Parent constructor runs first
+
+Then Child constructor runs
+
+
+**************************************
+**************************************
+
+🧠 Quick Summary
+| Concept           | Purpose                              |
+| ----------------- | ------------------------------------ |
+| Class Method      | Works with class variables           |
+| del               | Deletes variables/objects            |
+| Inheritance       | Reuse parent class features          |
+| Polymorphism      | Same method name, different behavior |
+| Private Attribute | Hide data                            |
+| Private Method    | Hide internal logic                  |
+| Property          | Controlled access to private data    |
+| super()           | Call parent class methods            |
+
